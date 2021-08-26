@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {  RouterModule, Routes } from '@angular/router';
 import { EmpleadoComponent } from './components/empleado/empleado.component';
+import { HttpClientModule} from '@angular/common/http';
 
 const rutas: Routes =
 [
@@ -19,7 +20,8 @@ const rutas: Routes =
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(rutas)
+    RouterModule.forRoot(rutas),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
